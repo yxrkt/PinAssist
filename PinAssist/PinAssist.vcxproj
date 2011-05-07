@@ -50,7 +50,7 @@
       <AdditionalDependencies>Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>cp "$(SolutionDir)$(IntDir)$(ProjectName).dll" "$(USERPROFILE)\AppData\Local\AutoHotkey\$(ProjectName).dll"</Command>
+      <Command>copy "$(SolutionDir)$(IntDir)$(ProjectName).dll" "$(USERPROFILE)\AppData\Local\AutoHotkey\$(ProjectName).dll"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -70,7 +70,7 @@
       <AdditionalDependencies>Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>cp "$(SolutionDir)$(IntDir)$(ProjectName).dll" "$(USERPROFILE)\AppData\Local\AutoHotkey\$(ProjectName).dll"</Command>
+      <Command>copy "$(SolutionDir)$(IntDir)$(ProjectName).dll" "$(USERPROFILE)\AppData\Local\AutoHotkey\$(ProjectName).dll"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
